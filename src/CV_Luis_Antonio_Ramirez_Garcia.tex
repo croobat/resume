@@ -1,0 +1,223 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+%----------ATS COMPLIANCE----------
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+%----------FONT OPTIONS----------
+% sans-serif
+\usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Luis A. Ramírez} \\ \vspace{1pt}
+    \small +52 492-544-9671 $|$ \href{tonyramirez.business@outlook.com}{\underline{tonyramirez.business@outlook.com}} $|$
+    \href{https://linkedin.com/in/tonyramirez1}{\underline{linkedin.com/in/tonyramirez1}} $|$
+    \href{https://github.com/croobat}{\underline{github.com/croobat}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {National Polytechnic Institute (IPN)}{Zacatecas, ZAC, MX}
+      {Bachelor of Mechatronics Engineering}{5 years}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Full-stack Web Developer and System Administrator}{1 year}
+      {Lion Intel}{Aguascalientes, AGS, MX}
+      \resumeItemListStart
+        \resumeItem{Developed, maintained, and enhanced PHP-based ERP and CRMs by using PHP, HTML, CSS, JavaScript, jQuery, and Ajax}
+        \resumeItem{Utilized Vue and React frameworks across diverse front-end projects}
+        \resumeItem{Utilized Node, Express and Django frameworks across diverse back-end projects}
+        \resumeItem{Integrated web services using REST and SOAP, enhancing functionality and data exchange between systems}
+        \resumeItem{Managed MySQL and SQL Server databases, including designing tables, infrastructure and optimizing queries}
+        \resumeItem{Performed system administration tasks on Ubuntu and Debian web servers, including setup, configuration, and monitoring}
+        \resumeItem{Collaborated with cross-functional development teams to gather and comprehend project requirements, ensuring alignment with stakeholders. Employed the Scrum Agile methodology to facilitate iterative development, regular sprint planning, and timely delivery of high-quality projects.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Web and Software Developer}{1 year}
+      {Bizont}{Whitehorse, YT, CA}
+      \resumeItemListStart
+        \resumeItem{Created and enhanced multiple projects by using Vue.js, React, GraphQL, React Native, Node.js and Git}
+        \resumeItem{Contributed to defining software development life cycle within collaborative teams}
+        \resumeItem{Revised webpage styling for responsive design, ensuring optimal user experience}
+        \resumeItem{Verified and deployed software, ensuring optimal performance}
+        \resumeItem{Created comprehensive technical documentation for reference}
+        \resumeItem{Participated in CMS testing, ensuring content management system efficacy}
+        \resumeItem{Demonstrated english proficiency, showing effective communication}
+        \resumeItem{Optimized multimedia elements for improved content effectiveness}
+        \resumeItem{Tailored content styles for various formats, showcasing versatility}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+% \section{Projects}
+%     \resumeSubHeadingListStart
+%       \resumeProjectHeading
+%           {\textbf{Gitlytics} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{June 2020 -- Present}
+%           \resumeItemListStart
+%             \resumeItem{Developed a full-stack web application using with Flask serving a REST API with React as the frontend}
+%             \resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
+%             \resumeItem{Visualized GitHub data to show collaboration}
+%             \resumeItem{Used Celery and Redis for asynchronous tasks}
+%           \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills (programming)}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages (Scripting)}{: JavaScript, PHP, Lua, Python, GDScript} \\
+     \textbf{Languages (General purpose)}{: C/C++, C\#, Python, Java, GDScript} \\
+     \textbf{Languages (Query databases)}{: MySQL, PostgreSQL, GraphQL, MongoDB, SQL Server} \\
+     \textbf{Languages (Hardware description)}{: VHDL, Verilog} \\
+     \textbf{Languages (Markup)}{: HTML/CSS, Less, Sass, LaTeX, Markdown, XML, YAML, JSON} \\
+     \textbf{Languages (Others)}{: MATLAB, Assembly} \\
+     \textbf{Frameworks}{: React, Vue, Node.js, WordPress, Drupal, React Native, FastAPI, Laravel, Hugo, Astro, Electron} \\
+     \textbf{Developer Tools}{: Git, Docker, APIs REST, APIs SOAP, VIM, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse, Xilinx ISE} \\
+     \textbf{Others}{: Machine learning, Data analysis, Excel, Circuit analysis, Circuit design, FPGAs, PLCs, Machine vision systems, fuzzy systems} \\
+     \textbf{Libraries}{: jQuery, Axios, Moment.js, Chart.js, i18n, react-intl, Ionic, Gatsby, Express, Tailwind, Bootstrap, React Router, Redux, Material-UI, Styled-components, Twig, Pandas, NumPy, Matplotlib, Shopify, Elementor}
+    }}
+ \end{itemize}
+
+% %-----------ENGINEERING SKILLS-----------
+% \section{Technical Skills (engineering)}
+%  \begin{itemize}[leftmargin=0.15in, label={}]
+%     \small{\item{
+%      \textbf{Mechanical Skills}{: Mechanical design, Computer Assisted Design, Manufacture processes, Hydraulics/pneumatics, Maintenance of manufactured systems, fluid mechanics} \\
+%      \textbf{Control Systems}{: Logical circuits, Sensors conditioning, Control of mechatronics systems, Industrial automation} \\
+%      \textbf{Electronics systems}{: Digital/analogue electronics, power electronics, PCB design, Digital signal processing, Virtual instrumentation} \\
+%      \textbf{Software}{: Microsoft Office suite, Adobe suite, Solidworks/FreeCAD, ANSYS, Inkscape, GIMP, Kdenlive, MATLAB/SCILAB, OrCAD, FluidSIM, Simatic step7} \\
+%    }}
+%  \end{itemize}
+
+%-----------SOFT SKILLS-----------
+\section{Soft Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Technical skills}{: Mock-ups for printed materials, spreadsheet and slideshow creation, data analysis, image and video edition, vector image and logo design.} \\
+     \textbf{Soft skills}{: Verbal communication, teamwork skills, problem-solving, work under pressure, public speaking, decision making, creative, ethical, analytical and profesional, funny.} \\
+   }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
