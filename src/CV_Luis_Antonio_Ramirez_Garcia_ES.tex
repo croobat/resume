@@ -9,6 +9,7 @@
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
+\usepackage[margin=0.70in]{geometry}
 \usepackage{titlesec}
 \usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
@@ -27,17 +28,10 @@
 %----------FONT OPTIONS----------
 % sans-serif
 \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
 
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+ % clear all header and footer fields
+\fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
@@ -46,12 +40,11 @@
 \urlstyle{same}
 
 \raggedbottom
-\raggedright
 \setlength{\tabcolsep}{0in}
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-4pt}\scshape\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -66,11 +59,11 @@
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
+  \vspace{4pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-2pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
@@ -93,7 +86,7 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.15in]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
@@ -103,11 +96,6 @@
 \begin{document}
 
 %----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
-
 \begin{center}
     \textbf{\Huge \scshape Luis A. Ramírez} \\ \vspace{1pt}
     \small +52 492-544-9671 $|$ \href{tonyramirez.business@outlook.com}{\underline{tonyramirez.business@outlook.com}} $|$
@@ -116,6 +104,13 @@
 		\href{https://croobat.com}{\underline{croobat.com}}
 \end{center}
 
+%-----------PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{
+\item{Desarrollador de software con experiencia en el desarrollo de aplicaciones móviles y web. Experiencia en la implementación de estándares de seguridad, optimización del rendimiento y liderazgo de equipos de desarrollo multiplataforma. Experto en React Native, TypeScript y prácticas modernas de desarrollo, con experiencia adicional en React, Vue.js y .NET Core.}
+}
+\end{itemize}
 
 %-----------EDUCATION-----------
 \section{Educación}
@@ -130,58 +125,59 @@
 \section{Experiencia}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Desarrollador Web Full-stack y Administrador de Sistemas}{2 años}
-      {Lion Intel}{Aguascalientes, AGS, MX}
+      {Desarrollador React Native} {2 años (actual)}
+      {Saeko Inc.} {Pachuca de Soto, HGO, MX}
+      \resumeItemListStart
+        \resumeItem{Lideré la reescritura completa de una aplicación React Native heredada, implementando mejores prácticas modernas y TypeScript para mejorar la seguridad de tipos y mantenibilidad}
+        \resumeItem{Diseñé e implementé una estructura de proyecto escalable siguiendo principios de arquitectura limpia, mejorando significativamente la organización y mantenibilidad del código}
+        \resumeItem{Desarrollé documentación completa y establecí estándares de codificación para asegurar prácticas de desarrollo consistentes}
+        \resumeItem{Implementé estrategias de pruebas automatizadas usando Jest y React Native Testing Library para asegurar la confiabilidad y mantenibilidad del código}
+        \resumeItem{Optimicé el rendimiento de la aplicación mediante gestión eficiente del estado, división de código y gestión adecuada del ciclo de vida de componentes}
+        \resumeItem{Integré módulos nativos y conecté APIs nativas para mejorar la funcionalidad de la aplicación en ambas plataformas}
+        \resumeItem{Establecí pipelines de CI/CD y procesos de despliegue automatizados para agilizar el flujo de desarrollo}
+        \resumeItem{Realicé revisiones de código e implementé procesos de control de calidad para mantener altos estándares de código}
+        \resumeItem{Migré exitosamente la aplicación a TypeScript, mejorando la seguridad de tipos y reduciendo errores en tiempo de ejecución}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Desarrollador React Native y Front-end} {1 año}
+      {Bizont} {Whitehorse, YT, CA}
+      \resumeItemListStart
+        \resumeItem{Desarrollé y mantuve aplicaciones móviles multiplataforma usando React Native, asegurando rendimiento consistente en iOS y Android}
+        \resumeItem{Implementé módulos nativos y conecté APIs nativas para mejorar la funcionalidad y rendimiento de la aplicación móvil}
+        \resumeItem{Utilicé la arquitectura basada en componentes de React Native para crear componentes UI reutilizables y código mantenible}
+        \resumeItem{Integré bibliotecas y APIs de terceros para extender las capacidades de la aplicación y mejorar la experiencia del usuario}
+        \resumeItem{Trabajé con soluciones de gestión de estado como Redux y Context API para manejar estados complejos de la aplicación}
+        \resumeItem{Optimicé el rendimiento de la aplicación móvil mediante división de código, carga diferida y técnicas eficientes de renderizado}
+        \resumeItem{Colaboré con diseñadores para implementar layouts responsivos y asegurar una implementación UI perfecta}
+        \resumeItem{Implementé pruebas automatizadas usando Jest y React Native Testing Library para asegurar la confiabilidad del código}
+        \resumeItem{Mantuve documentación clara y demostré comunicación efectiva en inglés dentro del equipo de desarrollo}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Desarrollador Front-end} {1 año}
+      {Broxia Intelligence} {Tabasco, TAB, MX}
+      \resumeItemListStart
+        \resumeItem{Desarrollé y mantuve una plataforma de monitoreo para equipos de extracción de petróleo}
+        \resumeItem{Utilicé Vue.js, Tailwind CSS y Pinia para crear una interfaz responsiva y amigable para el usuario}
+        \resumeItem{Integré ECharts para visualizar datos y proporcionar información a los usuarios}
+        \resumeItem{Colaboré con un equipo de desarrolladores para asegurar que la plataforma cumpliera con los requisitos del cliente}
+        \resumeItem{Optimicé la plataforma para rendimiento y experiencia de usuario}
+        \resumeItem{Utilicé Vitest y Cypress para implementar pruebas automatizadas y asegurar la confiabilidad y funcionalidad del código desarrollado}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Desarrollador Web Full-stack y Administrador de Sistemas} {2 años}
+      {Lion Intel} {Aguascalientes, AGS, MX}
       \resumeItemListStart
         \resumeItem{Desarrollé, mantuve y mejoré ERPs y CRMs basados en PHP utilizando PHP, HTML, CSS, JavaScript, jQuery y Ajax}
         \resumeItem{Utilicé los frameworks Vue y React en diversos proyectos de front-end}
-        \resumeItem{Utilicé los frameworks Node, Express y Django en diversos proyectos de back-end}
+        \resumeItem{Utilicé los frameworks Node, Express, Django y .NET Core en diversos proyectos de back-end}
         \resumeItem{Integré servicios web utilizando REST y SOAP, mejorando la funcionalidad y el intercambio de datos entre sistemas}
         \resumeItem{Gestioné bases de datos MySQL y SQL Server, incluyendo el diseño de tablas, infraestructura y optimización de consultas}
-        \resumeItem{Realicé tareas de administración de sistemas en servidores web Ubuntu y Debian, incluyendo configuración y mantenimiento de contenedores en Docker}
+        \resumeItem{Realicé tareas de administración de sistemas en servidores web Ubuntu y Debian, incluyendo configuración y mantenimiento}
         \resumeItem{Colaboré con equipos de desarrollo interfuncionales para recopilar y comprender los requisitos del proyecto. Utilicé la metodología Scrum Agile para facilitar el desarrollo iterativo, la planificación regular de sprints y la entrega oportuna de proyectos de alta calidad}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Desarrollador Front-end}{1 año}
-      {Bizont}{Whitehorse, YT, CA}
-      \resumeItemListStart
-        \resumeItem{Creé y mejoré múltiples proyectos utilizando Vue.js, React, GraphQL, React Native, Node.js y Git}
-        \resumeItem{Contribuí a definir el ciclo de vida del desarrollo de software en equipos colaborativos}
-        \resumeItem{Revisé y modifiqué los estilos de las páginas web para un diseño ergonómico, asegurando una experiencia cómoda para el usuario}
-        \resumeItem{Verifiqué y desplegué software, garantizando un rendimiento óptimo en el entorno}
-        \resumeItem{Escribí documentación técnica completa para referencia}
-        \resumeItem{Participé en pruebas de sistemas de gestión de contenidos (CMS)}
-        \resumeItem{Demostré competencia en inglés, haciendo uso de una comunicación efectiva}
-        \resumeItem{Optimicé elementos multimedia para mejorar la efectividad del contenido}
-        \resumeItem{Adapté estilos de contenido para un diseño responsivo y versátil}
-      \resumeItemListEnd
-
-		\resumeSubheading
-			{Desarrollador Web Front-end}{1 año}
-			{Broxia Intelligence}{Tabasco, TAB, MX}
-			\resumeItemListStart
-				\resumeItem{Desarrollé y mantuve una plataforma de monitoreo para equipos de extracción de petróleo}
-				\resumeItem{Utilicé Vue.js, Tailwind CSS y Pinia para crear una interfaz receptiva y amigable para el usuario}
-				\resumeItem{Integré ECharts para visualizar datos y proporcionar información a los usuarios}
-				\resumeItem{Colaboré con un equipo de desarrolladores para garantizar que la plataforma cumpliera con los requisitos del cliente}
-				\resumeItem{Optimicé la plataforma para el rendimiento y la experiencia del usuario}
-				\resumeItem{Utilicé Vitest y Cypress para implementar pruebas automatizadas y garantizar la confiabilidad y funcionalidad del código desarrollado}
-			\resumeItemListEnd
-
-    \resumeSubheading
-      {Desarrollador de React Native}{2 años}
-      {Saeko Inc.}{Pachuca de Soto, HGO, MX}
-      \resumeItemListStart
-        \resumeItem{Diseñé y desarrollé componentes de UI para aplicaciones en línea y móviles utilizando el ecosistema de React y JavaScript}
-        \resumeItem{Colaboré estrechamente con un pequeño equipo de ingenieros de React Native, diseñadores, profesionales de QA y gerentes para garantizar una ejecución de proyectos fluida}
-        \resumeItem{Traduje marcos y prototipos en componentes de aplicación e IU, manteniendo un enfoque en la eficiencia y reutilización del código}
-        \resumeItem{Utilicé módulos nativos según sea necesario e interactué con APIs nativas para aplicaciones configuradas en plataformas Android e iOS}
-        \resumeItem{Implementé pruebas automatizadas para garantizar la confiabilidad y funcionalidad del código desarrollado}
-        \resumeItem{Optimicé el rendimiento del front-end identificando y eliminando cuellos de botella de rendimiento}
-        \resumeItem{Desarrollé módulos de front-end con un fuerte énfasis en la reutilización y eficiencia del código}
-        \resumeItem{Integré dependencias y APIs de terceros para mejorar la funcionalidad de la aplicación}
-        \resumeItem{Trabajé con la arquitectura Redux para optimizar la velocidad del sitio web y la aplicación móvil}
+        \resumeItem{Desarrollé y mantuve aplicaciones .NET Core, implementando APIs RESTful e integrando con varios sistemas de bases de datos}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
@@ -192,43 +188,32 @@
 %           {\textbf{Gitlytics} $|$ \emph{Python, Flask, React, PostgreSQL, Docker}}{June 2020 -- Present}
 %           \resumeItemListStart
 %             \resumeItem{Developed a full-stack web application using with Flask serving a REST API with React as the frontend}
-%             \resumeItem{Implemented GitHub OAuth to get data from user’s repositories}
+%             \resumeItem{Implemented GitHub OAuth to get data from user's repositories}
 %             \resumeItem{Visualized GitHub data to show collaboration}
 %             \resumeItem{Used Celery and Redis for asynchronous tasks}
 %           \resumeItemListEnd
 %     \resumeSubHeadingListEnd
 
 %-----------PROGRAMMING SKILLS-----------
-\section{Habilidades Técnicas (programación)}
-\begin{itemize}[leftmargin=0.15in, label={}, itemsep=2pt, parsep=2pt]
+\section{Habilidades Técnicas}
+\begin{itemize}[leftmargin=0.05in, label={}, itemsep=2pt, parsep=2pt]
   \small{\item{
     \textbf{Lenguajes (Scripting)}{: JavaScript, PHP, Lua, Python, GDScript} \\
     \textbf{Lenguajes (Propósito general)}{: C/C++, C\#, Python, Java, GDScript} \\
     \textbf{Lenguajes (Consultas a bases de datos)}{: MySQL, PostgreSQL, GraphQL, MongoDB, SQL Server} \\
     \textbf{Lenguajes (Descripción de hardware)}{: VHDL, Verilog} \\
-    \textbf{Lenguajes (Marcado)}{: HTML/CSS, Less, Sass, LaTeX, Markdown, XML, YAML, JSON} \\
+    \textbf{Lenguajes (Markdown)}{: HTML/CSS, Less, Sass, LaTeX, Markdown, XML, YAML, JSON} \\
     \textbf{Lenguajes (Otros)}{: MATLAB, Assembly} \\
-    \textbf{Frameworks}{: React, Vue, Node.js, React Native, WordPress, Drupal, FastAPI, Laravel, Hugo, Astro, Electron} \\
+    \textbf{Frameworks}{: React, Vue, Node.js, React Native, .NET Core, ASP.NET, WordPress, Drupal, FastAPI, Laravel, Hugo, Astro, Electron} \\
     \textbf{Herramientas de Desarrollo}{: Git, Docker, APIs REST, APIs SOAP, VIM, VS Code, Visual Studio, PyCharm, IntelliJ, Eclipse, Xilinx ISE} \\
     \textbf{Bibliotecas}{: jQuery, Axios, Redux, Jest, Moment.js, Chart.js, i18n, react-intl, Ionic, Gatsby, Express, Tailwind, Bootstrap, React Router, Redux, Material-UI, Styled-components, Twig, Pandas, NumPy, Pinia} \\
     \textbf{Otros}{: Machine learning, Análisis de datos, Excel, Análisis de circuitos, Diseño de circuitos, FPGAs, PLCs, Sistemas de visión artificial, Sistemas difusos, Creación de maquetas para materiales impresos, creación de hojas de cálculo y presentaciones, análisis de datos, edición de imágenes y videos, diseño de imágenes vectoriales y logotipos} \
   }}
 \end{itemize}
 
-% %-----------ENGINEERING SKILLS-----------
-% \section{Habilidades Técnicas (ingeniería)}
-% \begin{itemize}[leftmargin=0.15in, label={}]
-%   \small{\item{
-%     \textbf{Habilidades Mecánicas}{: Diseño mecánico, Diseño asistido por computadora, Procesos de fabricación, Hidráulica/neumática, Mantenimiento de sistemas fabricados, Mecánica de fluidos} \\
-%     \textbf{Sistemas de Control}{: Circuitos lógicos, Acondicionamiento de sensores, Control de sistemas mecatrónicos, Automatización industrial} \\
-%     \textbf{Sistemas Electrónicos}{: Electrónica digital/análoga, electrónica de potencia, diseño de PCB, Procesamiento de señales digitales, Instrumentación virtual} \\
-%     \textbf{Software}{: Suite de Microsoft Office, Suite de Adobe, Solidworks/FreeCAD, ANSYS, Inkscape, GIMP, Kdenlive, MATLAB/SCILAB, OrCAD, FluidSIM, Simatic Step 7}
-%   }}
-% \end{itemize}
-
 %-----------HABILIDADES SUAVES-----------
 \section{Habilidades Suaves}
-\begin{itemize}[leftmargin=0.15in, label={}]
+\begin{itemize}[leftmargin=0.05in, label={}]
   \small{
     \item{Comunicación verbal, habilidades para el trabajo en equipo, resolución de problemas, trabajo bajo presión, facilidad para hablar en público, toma de decisiones, creativo, ético, profesional, divertido}
   }
